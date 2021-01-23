@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+/*---------- CUSTOM BUILT ---------*/
+.navbar{
+    z-index: 1;
+}
+.hide{
+    overflow: hidden;
+}
+/*----------- Navbar ----------*/
+.navbar-brand span
+{
+    color: crimson;
+}
+.navbar-nav a
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand
+{
+    padding-left: 5vw;
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show > .nav-link
+{
+    color: crimson;           /*------------ HOME in NavBar ------------*/
+}
+.navbar-light .navbar-nav .nav-link
+{
+    padding-right: 2vw;
+    color: #fff;              /*------------ Buttons in NavBar ---------*/
+}
+.navbar-nav
+{
+    text-align: center;
+}
+.nav-link
+{
+    padding: 0.2rem 1rem;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+{
+    color: crimson !important;
+}
+.navbar-toggler:focus,.navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler
+{
+    padding: 1px 5px;
+    font-size: 1.3vw;
+    line-height: 0.3;
+    background: crimson;
+}
+.navbar-light
+{
+    background: black;
+}
+/*------------- Carousel -------------*/
+.carousel-caption
+{
+    top: 50% ;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+#carousel-text h5
+{
+    font-size: 4vw;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#carousel-text h5 span
+{
+    color: crimson;
+}
+#carousel-text p
+{
+    font-size: 1.5vw;
+    margin: auto;
+    line-height: 1.9;
+    font-family: 'Ubuntu', sans-serif;
+}
+#hire-me
+{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 5px 20px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s;
+}
+#hire-me:hover
+{
+    color: black;
+    font-weight: bold;    
+    background: none;
+}
+/*------------- About --------------*/
+#about
+{
+    background: rgba(0,0,0,0.3);
+    padding-bottom: 30px;
+}
+#about h1
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+#about h1::after
+{
+    content: '';
+    background: #420202;
+    display: block;
+    height: 3px;
+    width: 90px;
+    margin: 20px auto 5px;
+}
+#about p
+{
+    font-size: 18px;
+}
+/*------------- Projects ------------*/
+#projects
+{
+    background: #40090a;
+    padding-bottom: 3%;
+}
+#projects h1
+{
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+#projects h1::after
+{
+    content: '';
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+#projects img{
+    width: 150px;
+    height: 300px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.responsive 
+{
+  width: 100%;
+  height: auto;
+}
+.myImg {
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.myImg:hover
+{
+    opacity: 0.7;
+}
+ /*The Modal (background)*/ 
+.modal {
+  display: none;  /*Hidden by default */
+  position: fixed;  /*Stay in place */
+  z-index: 2;  /*Sit on top */
+  padding-top: 100px;  /*Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;  /*Full width */
+  height: 100%;  /*Full height */
+  overflow: auto;  /*Enable scroll if needed */
+  background-color: rgb(0,0,0);  /*Fallback color */
+  background-color: rgba(0,0,0,0.9);  /*Black w/ opacity */
+}
+
+ /*Modal Content (image)*/ 
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#myModal img{
+    width: auto;
+    height: auto;
+}
+
+ /*Caption of Modal Image*/ 
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+ /*Add Animation*/ 
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+ /*The Close Button*/ 
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: crimson;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ /*100% Image Width on Smaller Screens*/ 
+@media only screen and (min-width: 0px){
+  .modal-content {
+    max-width: 100%;
+  }
+}
+
+/*------------- Footer --------------*/
+#footer
+{
+    padding: 10px 0 20px;
+    background: rgba(0,0,0,0.9);
+    position: relative;
+}
+.title-text h1
+{
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.title-text h1::after
+{
+    content: '';
+    background: crimson;
+    display: block;
+    height: 3px;
+    width: 90px;
+    margin: 20px auto 5px;
+}
+
+.footer-row
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left h1
+{
+    color: crimson;
+    text-align: left;
+}
+.footer-right h1
+{
+    color: crimson;
+    text-align: right;
+}
+.footer-left,.footer-right
+{
+    color: #fff;
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right
+{
+    text-align: right;
+}
+.footer-left .fa,.footer-right .fa
+{
+    font-size: 20px;
+    color: crimson;
+    margin: 10px;
+}
+@media only screen and (max-width: 768px){
+  .footer-right {
+    margin-left: 40%
+  }
+}
+.social-links
+{
+    text-align: center;
+}
+.social-links .fa
+{
+
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid crimson;
+    border-radius: 90px;
+    margin: 40px 5px 0;
+    color: crimson;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-links .fa:hover
+{
+    background: crimson;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-links p
+{
+    color: crimson;
+    font-size: 18px;
+    margin-top: 20px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
